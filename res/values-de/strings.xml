@@ -1,0 +1,14 @@
+<resources>
+    <string name="exampleVersion">"Version 0.9c"</string>
+    <string name="busybox">"Laden BusyBox"</string>
+    <string name="isbusybox">"Ist BusyBox installiert?"</string>
+    <string name="isRootAvailable">"Ist Ihr Telefon verwurzelt?"</string>
+    <string name="isAccessGiven">"Überprüfen Sie für Access"</string>
+    <string name="library">"Open Source Lizenzen für Bibliotheken"</string>
+    <string name="app_name">"Holo Wurzel prüfen"</string>
+    <string name="license">"Holo Wurzel unter der Apache License, Version 2.0 lizenziert Prüfen"</string>
+    <string name="roottools">"RootTools von Stephen Erickson \ nis unter der Apache License, Version 2.0 Lizenziert"</string>
+    <string name="apache">"Lizenziert unter der Apache License, Version 2.0 (die \"Lizenz\"), können Sie nicht diese Datei nur in Übereinstimmung mit der Lizenz. Sie können eine Kopie der Lizenz unter \ n \ n http://www.apache.org/licenses/LICENSE-2.0 \ n \ n Sofern nicht durch geltendes Recht gefordert oder schriftlich zugesichert, Software unter der Lizenz verteilt wird auf einer \"AS IS\" BASIS, OHNE GARANTIE ODER BEDINGUNGEN DER jeglicher Art, weder ausdrücklich noch stillschweigend. Siehe die Lizenz für die jeweilige Sprache geltenden Berechtigungen und Einschränkungen im Rahmen der Lizenz. \ N \ n RootTools kann hier gefunden werden: \ n \ n http://code.google.com/p/roottools/"</string>
+    <string name="apache2">"Lizenziert unter der Apache License, Version 2.0 (die \"Lizenz\"), können Sie nicht diese Datei nur in Übereinstimmung mit der Lizenz. Sie können eine Kopie der Lizenz unter \ n \ n http://www.apache.org/licenses/LICENSE-2.0 \ n \ n Sofern nicht durch geltendes Recht gefordert oder schriftlich zugesichert, Software unter der Lizenz verteilt wird auf einer \"AS IS\" BASIS, OHNE GARANTIE ODER BEDINGUNGEN DER jeglicher Art, weder ausdrücklich noch stillschweigend. Siehe die Lizenz für die jeweilige Sprache geltenden Berechtigungen und Einschränkungen im Rahmen der Lizenz. \ N \ n Hallo an die SteveC, DoorToDoorGeek, Dirty Thumbs, SiliconWrench, DopePeddler, frzbgolfer und alle rooters und rommers out there!"</string>
+
+</resources>

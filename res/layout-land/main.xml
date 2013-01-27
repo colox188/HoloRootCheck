@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+              android:orientation="horizontal"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@drawable/rootcheck"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="52dp"
+            android:layout_alignTop="@+id/isAccessGiven"/>
+    <Button
+            android:id="@+id/isAccessGiven"
+            android:layout_height="wrap_content"
+            android:layout_width="196dp"
+            android:text="@string/isAccessGiven"
+            android:layout_alignParentRight="true" android:layout_alignParentTop="true"/>
+    <Button
+                android:id="@+id/isRootAvailable"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/isRootAvailable"
+                android:layout_alignRight="@+id/isAccessGiven" android:layout_alignParentTop="true"
+                android:layout_marginTop="50dp" android:layout_alignLeft="@+id/isAccessGiven"/>
+    <Button
+            android:id="@+id/isbusybox"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/isbusybox"
+            android:layout_alignRight="@+id/isAccessGiven" android:layout_below="@+id/isRootAvailable"
+            android:layout_alignLeft="@+id/isAccessGiven"/>
+    <Button
+                android:id="@+id/busybox"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/busybox"
+                android:layout_alignRight="@+id/isAccessGiven" android:layout_below="@+id/isbusybox"
+                android:layout_alignLeft="@+id/isAccessGiven"/>
+
+    <com.google.ads.AdView android:id="@+id/adView"
+                           android:layout_width="fill_parent"
+                           android:layout_height="wrap_content"
+                           ads:adUnitId="a15104a89e0290c"
+                           ads:adSize="BANNER"
+                           ads:loadAdsOnCreate="true"
+                           android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
