@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="exampleVersion">Version 0.9c</string>
-    <string name="busybox">Download Busy Box</string>
-    <string name="isbusybox">Is Busy Box Installed?</string>
-    <string name="isRootAvailable">Is Your Phone Rooted?</string>
+    <string name="busybox">Download BusyBox</string>
+    <string name="isbusybox">Is BusyBox Installed?</string>
+    <string name="isRootAvailable">Is Your Device Rooted?</string>
     <string name="isAccessGiven">Check For Access</string>
     <string name="library">Open Source Licenses for Libraries</string>
     <string name="app_name">Holo Root Check</string>

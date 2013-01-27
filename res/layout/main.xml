@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
               android:orientation="vertical"
               android:layout_width="fill_parent"
@@ -7,38 +7,46 @@
         >
 
     <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:src="@drawable/rootcheck"
-            android:layout_gravity="center"/>
-    <Button
-            android:id="@+id/isAccessGiven"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="@string/isAccessGiven"
-            />
-    <Button
-                android:id="@+id/isRootAvailable"
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent"
-                android:text="@string/isRootAvailable"
-            />
-    <Button
-            android:id="@+id/isbusybox"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:text="@string/isbusybox"
-            />
-    <Button
-                android:id="@+id/busybox"
-                android:layout_height="wrap_content"
-                android:layout_width="fill_parent"
-                android:text="@string/busybox"
-               />
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/rootcheck" />
 
+    <Button
+        android:id="@+id/isAccessGiven"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView"
+        android:text="@string/isAccessGiven" />
 
-    <com.google.ads.AdView android:id="@+id/adView"
+    <Button
+        android:id="@+id/isRootAvailable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isAccessGiven"
+        android:text="@string/isRootAvailable" />
+
+    <Button
+        android:id="@+id/isbusybox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isRootAvailable"
+        android:text="@string/isbusybox" />
+
+    <Button
+        android:id="@+id/busybox"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/isbusybox"
+        android:text="@string/busybox" />
+    
+        <com.google.ads.AdView android:id="@+id/adView"
                            android:layout_width="fill_parent"
                            android:layout_height="wrap_content"
                            android:background="#000000"
@@ -47,5 +55,4 @@
                            ads:loadAdsOnCreate="true"
                            android:layout_alignParentBottom="true"/>
 
-
-</LinearLayout>
+</RelativeLayout>
