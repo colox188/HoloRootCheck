@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="exampleVersion">Version 0.9c</string>
+    <string name="exampleVersion">Version 0.9d</string>
     <string name="busybox">Download BusyBox</string>
     <string name="isbusybox">Is BusyBox Installed?</string>
     <string name="isRootAvailable">Is Your Device Rooted?</string>
