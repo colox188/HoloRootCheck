@@ -22,7 +22,7 @@ public class Home extends Activity {
 
     private ShareActionProvider mShareActionProvider;
 
-    private Button busybox, isBusyBox, isRootAvailable, isAccessGiven, hasEnoughSpaceOnSdCard;
+    private Button busybox, isBusyBox, isRootAvailable, isAccessGiven;
 
     /** Called when the activity is first created. */
     @Override
@@ -121,7 +121,17 @@ public class Home extends Activity {
             default:
                 return super.onOptionsItemSelected(item); }
              }
+   
+    public boolean onOptionItemSelected(MenuItem item) {
+      switch (item.getItemId()) {
+        case R.xml.settings:
+          startActivity(new Intent(this, Settings.class));
 
+          return(true);
+      }
+
+      return(super.onOptionsItemSelected(item));
+    }
 
 
 
