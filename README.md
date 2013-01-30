@@ -2,7 +2,7 @@
 ---
 <p>Holo Root Checker is licensed under the Apache License, Version 2.0</p>
 ---
-<p>   Copyright 2013 Caleb Fultz and Autumn Bomb Apps</p>
+<p>   Copyright (c) 2013 Caleb Fultz and Autumn Bomb Apps</p>
 ---
    <p>Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
