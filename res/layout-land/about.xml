@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-        >
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content">
-              
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
     <TextView
         android:id="@+id/HRC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:text="@string/app_name"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -20,14 +18,17 @@
         android:id="@+id/rootcheckImage"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:src="@drawable/rootcheck"
-        android:layout_gravity="center" />
+        android:layout_below="@+id/HRC"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logoDesc"
+        android:src="@drawable/rootcheck" />
 
     <TextView
-        android:id="@+id/copyHRC"
+        android:id="@+id/copyHRCh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_below="@+id/rootcheckImage"
+        android:layout_centerHorizontal="true"
         android:text="@string/copyright"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -35,33 +36,26 @@
         android:id="@+id/showHoloRootCheck"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/view"
-        android:layout_gravity="center" />
-
-    <ImageView
-        android:id="@+id/split"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/miniline_separator" />
-    
-    <TextView
-        android:id="@+id/opensource"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/library"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-    
-
+        android:layout_alignLeft="@+id/showRootTools"
+        android:layout_below="@+id/copyHRCh"
+        android:text="@string/view" />
 
     <Button
         android:id="@+id/showRootTools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/view"
-        android:layout_gravity="center" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view" />
+
+    <TextView
+        android:id="@+id/opensource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/showRootTools"
+        android:layout_centerHorizontal="true"
+        android:text="@string/library"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
     
-    
-    </LinearLayout>
-    </ScrollView>
+    </RelativeLayout>
+
