@@ -5,14 +5,13 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ShareActionProvider;
 import android.widget.Toast;
+
 import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 import com.stericson.RootTools.RootTools;
@@ -32,6 +31,7 @@ public class Home extends Activity {
         //Request an ad
         AdView ad = (AdView) findViewById(R.id.adView);
         ad.loadAd(new AdRequest());
+        
 
 
         busybox = (Button) findViewById(R.id.busybox);
@@ -97,11 +97,11 @@ public class Home extends Activity {
 
 
         /** Getting the actionprovider associated with the menu item whose id is share */
-        mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share).getActionProvider();
+/**        mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share).getActionProvider(); */
 
 
         /** Setting a share intent */
-        mShareActionProvider.setShareIntent(getDefaultShareIntent());
+/*        mShareActionProvider.setShareIntent(getDefaultShareIntent()); */
 
 
         return super.onCreateOptionsMenu(menu);
@@ -115,26 +115,20 @@ public class Home extends Activity {
                 case R.id.about:
                     Intent about = new Intent(this, About.class);
                     this.startActivity(about);
-                             return true;
+                    return true;
+                             
+                             
+                case R.id.change:
+                    Intent changelog = new Intent(this, ChangeLog.class);
+                    this.startActivity(changelog);
+                    return true;
 
 
             default:
                 return super.onOptionsItemSelected(item); }
-             }
-   
-    public boolean onOptionItemSelected(MenuItem item) {
-      switch (item.getItemId()) {
-        case R.xml.settings:
-          startActivity(new Intent(this, Settings.class));
+             
 
-          return(true);
-      }
-
-      return(super.onOptionsItemSelected(item));
     }
-
-
-
 
     /** Returns a share intent */
     private Intent getDefaultShareIntent(){
