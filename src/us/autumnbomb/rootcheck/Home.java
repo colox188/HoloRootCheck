@@ -20,10 +20,6 @@ import com.stericson.RootTools.RootTools;
 
 public class Home extends Activity {
 
-	
-	
-
-
     private ShareActionProvider mShareActionProvider;
 
     private Button busybox, isBusyBox, isRootAvailable, isAccessGiven;
