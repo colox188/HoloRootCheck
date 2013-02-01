@@ -21,36 +21,33 @@ public final class R {
     }
     public static final class id {
         public static final int HRC=0x7f070000;
-        public static final int about=0x7f070014;
-        public static final int adView=0x7f070010;
-        public static final int apache=0x7f070012;
-        public static final int apache2=0x7f07000a;
-        public static final int busybox=0x7f07000f;
-        public static final int change=0x7f070015;
+        public static final int about=0x7f070013;
+        public static final int adView=0x7f07000f;
+        public static final int apache=0x7f070011;
+        public static final int apache2=0x7f070009;
+        public static final int busybox=0x7f07000e;
         public static final int copyHRC=0x7f070002;
         public static final int copyHRCh=0x7f070007;
-        public static final int imageView=0x7f07000b;
-        public static final int isAccessGiven=0x7f07000c;
-        public static final int isRootAvailable=0x7f07000d;
-        public static final int isbusybox=0x7f07000e;
-        public static final int license=0x7f070009;
+        public static final int imageView=0x7f07000a;
+        public static final int isAccessGiven=0x7f07000b;
+        public static final int isRootAvailable=0x7f07000c;
+        public static final int isbusybox=0x7f07000d;
+        public static final int license=0x7f070008;
         public static final int opensource=0x7f070005;
         public static final int rootcheckImage=0x7f070001;
-        public static final int roottools=0x7f070011;
-        public static final int share=0x7f070016;
+        public static final int roottools=0x7f070010;
+        public static final int share=0x7f070014;
         public static final int showHoloRootCheck=0x7f070003;
         public static final int showRootTools=0x7f070006;
         public static final int split=0x7f070004;
-        public static final int textView=0x7f070013;
-        public static final int webview=0x7f070008;
+        public static final int textView=0x7f070012;
     }
     public static final class layout {
         public static final int about=0x7f030000;
-        public static final int changelog=0x7f030001;
-        public static final int holorootcheck=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int roottools=0x7f030004;
-        public static final int splash=0x7f030005;
+        public static final int holorootcheck=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int roottools=0x7f030003;
+        public static final int splash=0x7f030004;
     }
     public static final class menu {
         public static final int menu=0x7f060000;

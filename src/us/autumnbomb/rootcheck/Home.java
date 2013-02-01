@@ -1,5 +1,6 @@
 package us.autumnbomb.rootcheck;
 
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -16,14 +17,20 @@ import com.google.ads.AdRequest;
 import com.google.ads.AdView;
 import com.stericson.RootTools.RootTools;
 
+
 public class Home extends Activity {
+
+	
+	
 
 
     private ShareActionProvider mShareActionProvider;
 
     private Button busybox, isBusyBox, isRootAvailable, isAccessGiven;
 
+
     /** Called when the activity is first created. */
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -95,13 +102,12 @@ public class Home extends Activity {
         getMenuInflater().inflate(R.menu.menu, menu);
 
 
+     /** Getting the actionprovider associated with the menu item whose id is share */
+       mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share).getActionProvider(); 
 
-        /** Getting the actionprovider associated with the menu item whose id is share */
-/**        mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.share).getActionProvider(); */
 
-
-        /** Setting a share intent */
-/*        mShareActionProvider.setShareIntent(getDefaultShareIntent()); */
+         /** Setting a share intent */
+    mShareActionProvider.setShareIntent(getDefaultShareIntent()); 
 
 
         return super.onCreateOptionsMenu(menu);
@@ -118,10 +124,6 @@ public class Home extends Activity {
                     return true;
                              
                              
-                case R.id.change:
-                    Intent changelog = new Intent(this, ChangeLog.class);
-                    this.startActivity(changelog);
-                    return true;
 
 
             default:
@@ -134,8 +136,8 @@ public class Home extends Activity {
     private Intent getDefaultShareIntent(){
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Holo Root Check");
-        intent.putExtra(Intent.EXTRA_TEXT, "Download 'Holo Root Check' from Google Play today! http://goo.gl/auZld");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Holo Root Checker");
+        intent.putExtra(Intent.EXTRA_TEXT, "Download 'Holo Root Checker' from Google Play today! http://goo.gl/auZld");
         return intent;
     }
 

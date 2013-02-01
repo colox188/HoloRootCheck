@@ -5,7 +5,7 @@
     android:versionName="0.9f-ads" >
 
     <uses-sdk
-        android:minSdkVersion="6"
+        android:minSdkVersion="14"
         android:targetSdkVersion="16" />
 
         <!-- AdMob SDK requires Internet permission  -->
@@ -15,6 +15,7 @@
                  android:icon="@drawable/rootcheck"
                  android:theme="@style/AppBaseTheme">
   
+     
         <activity
                 android:name=".Splash"
                 android:noHistory="true" >
@@ -30,21 +31,17 @@
         <activity android:name=".About"
                   android:label="@string/app_name"
                 android:parentActivityName=".Home">
-        </activity>
-        <activity android:name=".ChangeLog"
-                android:label="@string/app_name"
-                android:parentActivityName=".Home"
-                android:theme="@style/android:Theme.Dialog">
+        
         </activity>
                 <activity android:name=".HoloRootCheck"
                   android:label="@string/app_name"
                 android:parentActivityName=".About"
-                android:theme="@style/android:Theme.Dialog">
+                android:theme="@style/android:Theme.Holo.Dialog">
         </activity>
-                        <activity android:name=".RootTools"
+                        <activity android:name="RootToolsLicense"
                   android:label="@string/roottoolsview"
                 android:parentActivityName=".About"
-                android:theme="@style/android:Theme.Dialog">
+                android:theme="@style/android:Theme.Holo.Dialog">
         </activity>
                             
         <activity android:name="com.google.ads.AdActivity"

@@ -7,10 +7,7 @@
             android:icon="@drawable/ic_action_bulb"
             android:title="About"
             android:showAsAction="ifRoom|withText" />
-   <item
-            android:id="@+id/change"
-            android:title="Change Log"
-            android:showAsAction="never" />
+
     <item
             android:id="@+id/share"
             android:icon="@drawable/ic_action_share"

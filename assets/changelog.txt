@@ -1,0 +1,14 @@
+-----------------------------------
+CHANGELOG.txt Holo Root Checker 
+-----------------------------------
+Copyright (c) 2013 Autumn Bomb Apps
+-----------------------------------
+Versions
+-----------------------------------
+Current: 0.9-D
+- Updated strings
+- Corrected Force Closing issues for some tablets in horizontal mode
+- Updated Github with open source version (http://cfultz.github.com/HoloRootCheck)
+- Removed support for Honeycomb devices until further notice
+- Updated themeing method for future releases
+-----------------------------------

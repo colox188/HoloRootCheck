@@ -30,7 +30,7 @@ public class About extends Activity implements OnClickListener{
 	    	  break;
 	    	  
 	      case R.id.showRootTools:
-	    	  Intent r = new Intent(this, RootTools.class);
+	    	  Intent r = new Intent(this, RootToolsLicense.class);
 	    	  startActivity(r);
 	    	  break;
 	      }
