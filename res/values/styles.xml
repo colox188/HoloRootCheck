@@ -1,6 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
 <resources>
-    <style name="AppBaseTheme" parent="@android:style/Theme.Holo">
-        <!-- Any customizations for your app running on pre-3.0 devices here -->
+
+    <style name="Theme.Root" parent="@style/Theme.Sherlock">
+        <item name="actionBarItemBackground">@drawable/selectable_background_root</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Root</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Root</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Root</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Root</item>
+        <item name="actionBarStyle">@style/ActionBar.Transparent.Root</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_root</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_root</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Root</item>
+
+        
     </style>
-</resources> 
+
+    <style name="ActionBar.Solid.Root" parent="@style/Widget.Sherlock.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_root</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_root</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_root</item>
+        <item name="progressBarStyle">@style/ProgressBar.Root</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Root" parent="@style/Widget.Sherlock.ActionBar">
+        <item name="background">@drawable/ab_transparent_root</item>
+        <item name="progressBarStyle">@style/ProgressBar.Root</item>
+    </style>
+	
+    <style name="PopupMenu.Root" parent="@style/Widget.Sherlock.ListPopupWindow">	
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_root</item>	
+    </style>
+	
+    <style name="DropDownListView.Root" parent="@style/Widget.Sherlock.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_root</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Root" parent="@style/Widget.Sherlock.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_root</item>
+    </style>
+	
+    <style name="DropDownNav.Root" parent="@style/Widget.Sherlock.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_root</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_root</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_root</item>
+    </style>
+    
+    <style name="ProgressBar.Root" parent="@style/Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_root</item>
+    </style>
+    
+    <style name="ActionButton.CloseMode.Root" parent="@style/Widget.Sherlock.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_root</item>
+    </style>
+    
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Root.Widget" parent="@style/Theme.Sherlock">
+        <item name="popupMenuStyle">@style/PopupMenu.Root</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Root</item>
+    </style>
+
+</resources>

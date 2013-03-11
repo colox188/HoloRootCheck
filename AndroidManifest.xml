@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="us.autumnbomb.rootcheck"
-    android:versionCode="5"
-    android:versionName="0.9f-ads" >
+    android:versionCode="7"
+    android:versionName="1.2" >
 
     <uses-sdk
-        android:minSdkVersion="14"
+        android:minSdkVersion="8"
         android:targetSdkVersion="16" />
 
         <!-- AdMob SDK requires Internet permission  -->
@@ -13,7 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <application android:label="@string/app_name"
                  android:icon="@drawable/rootcheck"
-                 android:theme="@style/AppBaseTheme">
+                 android:theme="@style/Theme.Root">
   
      
         <activity
@@ -26,22 +26,24 @@
         </activity>
 
         <activity android:name=".Home"
-                  android:label="@string/app_name">
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.Root">
                 </activity>
         <activity android:name=".About"
                   android:label="@string/app_name"
-                android:parentActivityName=".Home">
+                  android:theme="@style/Theme.Root"
+                  android:parentActivityName=".Home">
         
         </activity>
                 <activity android:name=".HoloRootCheck"
                   android:label="@string/app_name"
                 android:parentActivityName=".About"
-                android:theme="@style/android:Theme.Holo.Dialog">
+                android:theme="@style/Theme.Sherlock.Dialog">
         </activity>
-                        <activity android:name="RootToolsLicense"
+                        <activity android:name=".RootToolsLicense"
                   android:label="@string/roottoolsview"
                 android:parentActivityName=".About"
-                android:theme="@style/android:Theme.Holo.Dialog">
+                android:theme="@style/Theme.Sherlock.Dialog">
         </activity>
                             
         <activity android:name="com.google.ads.AdActivity"
