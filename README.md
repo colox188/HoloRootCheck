@@ -23,3 +23,5 @@
 ---
    
 <p>This application also uses RootTools found here: <a href="http://code.google.com/p/roottools/">Google Code</a></p>
+<p>This application also uses ActionBarSherlock found here: <a href="http://actionbarsherlock.com/download.html">Website</a></p>
+<p>If you would like to donate to the projects or further the development by assisting in the purchase of a new developing computer, donate via Paypal at calebfultz@gmail.com or BitCoin 1928coyPSzsv1GuGhta95wQp4RQhMeg4eS</p>
